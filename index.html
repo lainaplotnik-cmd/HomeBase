@@ -167,5 +167,40 @@
       </section>
     </main>
   </div>
+  <div class="modal-backdrop">
+  <div class="modal">
+    <button class="modal-close" type="button">×</button>
+
+    <h2>Record Activity</h2>
+    <p class="modal-subtitle">Add an earning, deduction, or family note.</p>
+
+    <form id="transactionForm">
+      <label>
+        Kid
+        <select id="kidSelect" required></select>
+      </label>
+
+      <label>
+        Activity
+        <select id="ruleSelect" required></select>
+      </label>
+
+      <label>
+        Amount
+        <input id="amountInput" type="number" step="0.01" required />
+      </label>
+
+      <label>
+        Note
+        <textarea id="noteInput" placeholder="Optional note..."></textarea>
+      </label>
+
+      <button class="primary-button full" type="submit">Save Activity</button>
+    </form>
+  </div>
+</div>
+
+<script src="./api.js"></script>
+<script src="./app.js"></script>
 </body>
 </html>
