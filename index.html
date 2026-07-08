@@ -1,28 +1,171 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HomeBase</title>
   <link rel="stylesheet" href="./style.css" />
 </head>
+
 <body>
-  <main class="app">
-    <section class="hero">
+  <div class="app-shell">
+    <header class="topbar">
       <div>
         <p class="eyebrow">🏠 HomeBase</p>
-        <h1>Family money, goals, and good choices.</h1>
-        <p class="subtext">Track earnings, deductions, savings, and achievements for the kiddos.</p>
+        <h1>Building responsibility, one choice at a time.</h1>
+        <p class="subtitle">
+          Track earnings, deductions, goals, and good choices for the kiddos.
+        </p>
       </div>
-      <div class="piggy">💰</div>
-    </section>
 
-    <section class="grid">
-      <div class="card"><h2>Dean</h2><p class="balance">$40.00</p><span>Starting balance</span></div>
-      <div class="card"><h2>Demi</h2><p class="balance">$40.00</p><span>Starting balance</span></div>
-      <div class="card"><h2>Elise</h2><p class="balance">$40.00</p><span>Starting balance</span></div>
-      <div class="card"><h2>Kristos</h2><p class="balance">$40.00</p><span>Starting balance</span></div>
-    </section>
-  </main>
+      <div class="month-card">
+        <span>This Month</span>
+        <strong>July</strong>
+        <p>Starting allowance: $40</p>
+      </div>
+    </header>
+
+    <nav class="nav">
+      <button class="active">Dashboard</button>
+      <button>Ledger</button>
+      <button>Goals</button>
+      <button>Rewards</button>
+      <button>Achievements</button>
+      <button>Settings</button>
+    </nav>
+
+    <main>
+      <section class="summary-grid">
+        <article class="summary-card green">
+          <span>Total Family Balance</span>
+          <strong>$160.00</strong>
+          <p>Current month total</p>
+        </article>
+
+        <article class="summary-card blue">
+          <span>Rewards Earned</span>
+          <strong>$0.00</strong>
+          <p>Extra effort added</p>
+        </article>
+
+        <article class="summary-card coral">
+          <span>Deductions</span>
+          <strong>$0.00</strong>
+          <p>Choices to improve</p>
+        </article>
+
+        <article class="summary-card gold">
+          <span>Kindness Points</span>
+          <strong>0</strong>
+          <p>Character counts too</p>
+        </article>
+      </section>
+
+      <section class="section-header">
+        <div>
+          <h2>Kid Dashboard</h2>
+          <p>Click a card later to open their full profile.</p>
+        </div>
+        <button class="primary-button">+ Add Transaction</button>
+      </section>
+
+      <section class="kids-grid">
+        <article class="kid-card dean">
+          <div class="kid-top">
+            <div class="avatar">D</div>
+            <div>
+              <h3>Dean</h3>
+              <p>Turning 10 in September</p>
+            </div>
+          </div>
+
+          <div class="balance-row">
+            <span>Balance</span>
+            <strong>$40.00</strong>
+          </div>
+
+          <div class="mini-stats">
+            <span>+$0 earned</span>
+            <span>-$0 lost</span>
+            <span>❤️ 0 kindness</span>
+          </div>
+        </article>
+
+        <article class="kid-card demi">
+          <div class="kid-top">
+            <div class="avatar">D</div>
+            <div>
+              <h3>Demi</h3>
+              <p>8 years old</p>
+            </div>
+          </div>
+
+          <div class="balance-row">
+            <span>Balance</span>
+            <strong>$40.00</strong>
+          </div>
+
+          <div class="mini-stats">
+            <span>+$0 earned</span>
+            <span>-$0 lost</span>
+            <span>❤️ 0 kindness</span>
+          </div>
+        </article>
+
+        <article class="kid-card elise">
+          <div class="kid-top">
+            <div class="avatar">E</div>
+            <div>
+              <h3>Elise</h3>
+              <p>Turning 7 in November</p>
+            </div>
+          </div>
+
+          <div class="balance-row">
+            <span>Balance</span>
+            <strong>$40.00</strong>
+          </div>
+
+          <div class="mini-stats">
+            <span>+$0 earned</span>
+            <span>-$0 lost</span>
+            <span>❤️ 0 kindness</span>
+          </div>
+        </article>
+
+        <article class="kid-card kristos">
+          <div class="kid-top">
+            <div class="avatar">K</div>
+            <div>
+              <h3>Kristos</h3>
+              <p>Turning 4 on Christmas</p>
+            </div>
+          </div>
+
+          <div class="balance-row">
+            <span>Balance</span>
+            <strong>$40.00</strong>
+          </div>
+
+          <div class="mini-stats">
+            <span>+$0 earned</span>
+            <span>-$0 lost</span>
+            <span>❤️ 0 kindness</span>
+          </div>
+        </article>
+      </section>
+
+      <section class="activity-panel">
+        <div>
+          <h2>Recent Activity</h2>
+          <p>No activity yet. Add the first reward or deduction soon.</p>
+        </div>
+
+        <div class="empty-state">
+          🐶 Charlie is ready for his first walk entry.
+        </div>
+      </section>
+    </main>
+  </div>
 </body>
 </html>
