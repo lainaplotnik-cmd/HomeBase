@@ -185,10 +185,22 @@
         <select id="ruleSelect" required></select>
       </label>
 
-      <label>
-        Amount
-        <input id="amountInput" type="number" step="0.01" required />
-      </label>
+     <div class="money-grid">
+  <label>
+    Quantity
+    <input id="quantityInput" type="number" min="1" step="1" value="1" required />
+  </label>
+
+  <label>
+    Price Each ($)
+    <input id="priceInput" type="number" step="0.01" readonly />
+  </label>
+</div>
+
+<label>
+  Total ($)
+  <input id="totalInput" type="number" step="0.01" readonly />
+</label>
 
       <label>
         Note
