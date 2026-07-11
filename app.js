@@ -34,7 +34,9 @@ function getCurrentMonth() {
 
 function getKidTransactions(kidId) {
   return homeBaseData.transactions.filter(
-    tx => tx.kidId === kidId && tx.month === getCurrentMonth()
+    tx =>
+      String(tx.kidId).trim() === String(kidId).trim() &&
+      String(tx.month).slice(0, 7) === getCurrentMonth()
   );
 }
 
