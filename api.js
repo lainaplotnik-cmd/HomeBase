@@ -1,7 +1,9 @@
 const API_URL = "https://script.google.com/macros/s/AKfycbx0jKU9vwdCzaauW_IyeG2PHuXJ9LbAvs6x20jjCsgIgB0X-_SqI5lgTFIF0thLPlAh/exec";
 
 async function getHomeBaseData() {
-  const response = await fetch(API_URL);
+const response = await fetch(`${API_URL}?t=${Date.now()}`, {
+  cache: "no-store"
+});
   return response.json();
 }
 
