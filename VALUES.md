@@ -6,7 +6,7 @@ They are the principles we want to live by every day.
 
 The purpose of HomeBase is not to create perfect children.
 
-The purpose is to help each of us become capable, kind, responsible people who leave the world a little better than we found it.
+The purpose is to help each of us become capable, kind, responsible people who leave the world a little better than we found it. 
 
 ---
 
